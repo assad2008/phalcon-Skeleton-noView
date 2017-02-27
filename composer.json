@@ -1,0 +1,13 @@
+{
+    "require": {
+        "smarty/smarty": "^3.1"
+    },
+	"autoload": {
+		"files":[
+			"vendor/Myext/Functions/Functions.php"
+		],
+        "classmap":[
+				"vendor/Myext/Libs"
+		]
+	}
+}
