@@ -11,6 +11,20 @@ class ComposerStaticInit1a089318bdb84997bc8bd260adb6070a
         '2980ecea46b6468639b6a2814cbb8e8a' => __DIR__ . '/..' . '/Myext/Functions/Functions.php',
     );
 
+    public static $prefixesPsr0 = array (
+        'Z' => 
+        array (
+            'Zend_Registry' => 
+            array (
+                0 => __DIR__ . '/..' . '/zf1/zend-registry/library',
+            ),
+            'Zend_Exception' => 
+            array (
+                0 => __DIR__ . '/..' . '/zf1/zend-exception/library',
+            ),
+        ),
+    );
+
     public static $classMap = array (
         'Phpc\\libs\\Yiismarty' => __DIR__ . '/..' . '/Myext/Libs/Yiismarty.php',
     );
@@ -18,6 +32,7 @@ class ComposerStaticInit1a089318bdb84997bc8bd260adb6070a
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixesPsr0 = ComposerStaticInit1a089318bdb84997bc8bd260adb6070a::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit1a089318bdb84997bc8bd260adb6070a::$classMap;
 
         }, null, ClassLoader::class);
