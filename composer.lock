@@ -4,7 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3dbfb57644229e351cb293653f24321e",
     "content-hash": "f8d44af86d872b7dd1264bbc8eee27ae",
     "packages": [
         {
@@ -58,7 +57,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-12-14 21:57:25"
+            "time": "2016-12-14T21:57:25+00:00"
         },
         {
             "name": "zf1/zend-exception",
@@ -95,7 +94,7 @@
                 "framework",
                 "zend"
             ],
-            "time": "2015-04-30 11:10:20"
+            "time": "2015-04-30T11:10:20+00:00"
         },
         {
             "name": "zf1/zend-registry",
@@ -136,7 +135,7 @@
                 "registry",
                 "zend"
             ],
-            "time": "2015-04-30 11:14:26"
+            "time": "2015-04-30T11:14:26+00:00"
         }
     ],
     "packages-dev": [],
