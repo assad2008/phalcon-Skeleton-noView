@@ -6,6 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'f084d01b0a599f67676cffef638aa95b' => $vendorDir . '/smarty/smarty/libs/bootstrap.php',
     '2980ecea46b6468639b6a2814cbb8e8a' => $vendorDir . '/Myext/Functions/Functions.php',
 );

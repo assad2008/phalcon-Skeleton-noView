@@ -7,7 +7,6 @@ namespace Composer\Autoload;
 class ComposerStaticInit1a089318bdb84997bc8bd260adb6070a
 {
     public static $files = array (
-        'f084d01b0a599f67676cffef638aa95b' => __DIR__ . '/..' . '/smarty/smarty/libs/bootstrap.php',
         '2980ecea46b6468639b6a2814cbb8e8a' => __DIR__ . '/..' . '/Myext/Functions/Functions.php',
     );
 

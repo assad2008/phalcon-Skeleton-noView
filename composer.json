@@ -1,6 +1,5 @@
 {
     "require": {
-        "smarty/smarty": "^3.1",
         "zf1/zend-registry": "^1.12"
     },
 	"autoload": {
