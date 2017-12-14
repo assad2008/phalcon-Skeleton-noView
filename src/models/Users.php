@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpc\Models;
+namespace Yeedev\Models;
 
 use Phalcon\Mvc\Model;
 
@@ -8,6 +8,6 @@ class Users extends Model
 {
     public function initialize()
     {
-    	$this->setConnectionService('mdb');
+        $this->setConnectionService('mdb');
     }
 }

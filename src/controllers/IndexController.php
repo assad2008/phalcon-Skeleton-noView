@@ -1,8 +1,8 @@
 <?php
 
-namespace Phpc\Controllers;
+namespace Yeedev\Controllers;
 
-use Phpc\Controllers\ControllerBase;
+use Yeedev\Controllers\ControllerBase;
 
 class IndexController extends ControllerBase
 {

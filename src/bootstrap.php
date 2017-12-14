@@ -1,14 +1,17 @@
 <?php
+
 /**
- * @File Name: bootstrap.php
+ * @Filename: bootstrap.php
  * @Author: assad
- * @Date:   2017-08-03 16:22:34
+ * @Date:   2017-08-16 10:22:44
+ * @Synopsis: 核心启动文件
+ * @Version: 1.0
  * @Last Modified by:   assad
- * @Last Modified time: 2017-08-03 16:33:22
+ * @Last Modified time: 2017-12-14 18:07:24
  * @Email: rlk002@gmail.com
  */
 
-namespace Phpc;
+namespace Yeedev;
 
 use Phalcon\Cache\Backend\Redis as Rediscache;
 use Phalcon\Cache\Frontend\Data as FrontData;
@@ -46,8 +49,8 @@ class Application extends BaseApplication
         );
         $loader->registerNamespaces(
             [
-                'Phpc\Controllers' => $this->config->application->controllersDir,
-                'Phpc\Models' => $this->config->application->modelsDir,
+                'Yeedev\Controllers' => $this->config->application->controllersDir,
+                'Yeedev\Models' => $this->config->application->modelsDir,
             ]
         );
         $loader->register();
@@ -64,7 +67,7 @@ class Application extends BaseApplication
 
         $di->set('dispatcher', function () {
             $dispatcher = new Dispatcher();
-            $dispatcher->setDefaultNamespace('Phpc\Controllers');
+            $dispatcher->setDefaultNamespace('Yeedev\Controllers');
             return $dispatcher;
         });
 

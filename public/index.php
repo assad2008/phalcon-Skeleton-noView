@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpc;
+namespace Yeedev;
 
 error_reporting(E_ALL ^ E_NOTICE);
 define(ROOT_PATH, str_replace("\\", '/', dirname(dirname(__FILE__))) . "/");

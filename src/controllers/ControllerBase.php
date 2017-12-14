@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpc\Controllers;
+namespace Yeedev\Controllers;
 
 class ControllerBase extends \Phalcon\Mvc\Controller
 {

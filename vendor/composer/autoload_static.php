@@ -7,7 +7,39 @@ namespace Composer\Autoload;
 class ComposerStaticInit1a089318bdb84997bc8bd260adb6070a
 {
     public static $files = array (
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '2208db94ce05fb2f82040fa4f2ccdbe6' => __DIR__ . '/..' . '/leeoniya/dump-r/dump_r.php',
         '2980ecea46b6468639b6a2814cbb8e8a' => __DIR__ . '/..' . '/Myext/Functions/Functions.php',
+    );
+
+    public static $prefixLengthsPsr4 = array (
+        'd' => 
+        array (
+            'dump_r\\' => 7,
+        ),
+        'T' => 
+        array (
+            'Twig\\' => 5,
+        ),
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'dump_r\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/leeoniya/dump-r/src/dump_r',
+        ),
+        'Twig\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -22,6 +54,13 @@ class ComposerStaticInit1a089318bdb84997bc8bd260adb6070a
                 0 => __DIR__ . '/..' . '/zf1/zend-exception/library',
             ),
         ),
+        'T' => 
+        array (
+            'Twig_' => 
+            array (
+                0 => __DIR__ . '/..' . '/twig/twig/lib',
+            ),
+        ),
     );
 
     public static $classMap = array (
@@ -31,6 +70,8 @@ class ComposerStaticInit1a089318bdb84997bc8bd260adb6070a
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInit1a089318bdb84997bc8bd260adb6070a::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit1a089318bdb84997bc8bd260adb6070a::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit1a089318bdb84997bc8bd260adb6070a::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit1a089318bdb84997bc8bd260adb6070a::$classMap;
 
