@@ -64,7 +64,7 @@ class ComposerStaticInit1a089318bdb84997bc8bd260adb6070a
     );
 
     public static $classMap = array (
-        'Phpc\\libs\\Yiismarty' => __DIR__ . '/..' . '/Myext/Libs/Yiismarty.php',
+        'Yeedev\\ViewBase' => __DIR__ . '/..' . '/Myext/Libs/ViewBase.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Phpc\\libs\\Yiismarty' => $vendorDir . '/Myext/Libs/Yiismarty.php',
+    'Yeedev\\ViewBase' => $vendorDir . '/Myext/Libs/ViewBase.php',
 );

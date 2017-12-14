@@ -1,0 +1,17 @@
+[Thu, 14 Dec 17 18:30:29 +0800][ERROR] The "../app/views/" directory does not exist ("/www/wwwroot/phalcon.yeedev.xyz/public/../app/views/").
+[Thu, 14 Dec 17 18:38:32 +0800][ERROR] Wrong number of parameters
+[Thu, 14 Dec 17 18:38:35 +0800][ERROR] Wrong number of parameters
+[Thu, 14 Dec 17 18:42:31 +0800][ERROR] Call to undefined method ::start()
+[Thu, 14 Dec 17 18:42:41 +0800][ERROR] Call to undefined method ::start()
+[Thu, 14 Dec 17 18:43:07 +0800][ERROR] Call to undefined method ::start()
+[Thu, 14 Dec 17 18:43:43 +0800][ERROR] Call to undefined method ::start()
+[Thu, 14 Dec 17 18:43:46 +0800][ERROR] Call to undefined method ::start()
+[Thu, 14 Dec 17 18:44:03 +0800][ERROR] Call to undefined method ::start()
+[Thu, 14 Dec 17 18:46:12 +0800][ERROR] Call to undefined method ::start()
+[Thu, 14 Dec 17 18:46:15 +0800][ERROR] Call to undefined method ::start()
+[Thu, 14 Dec 17 18:46:55 +0800][ERROR] Service 'view' wasn't found in the dependency injection container
+[Thu, 14 Dec 17 18:47:07 +0800][ERROR] Service 'view' wasn't found in the dependency injection container
+[Thu, 14 Dec 17 18:47:24 +0800][ERROR] Call to undefined method ::start()
+[Thu, 14 Dec 17 18:47:45 +0800][ERROR] Service 'view' wasn't found in the dependency injection container
+[Thu, 14 Dec 17 18:48:08 +0800][ERROR] Trying to call method start on a non-object
+[Thu, 14 Dec 17 18:49:54 +0800][ERROR] Unable to find template "index.html" (looked into: /www/wwwroot/phalcon.yeedev.xyz/src/views).

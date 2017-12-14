@@ -14,6 +14,7 @@ class IndexController extends ControllerBase
 
     public function indexAction()
     {
-        return "hello world";
+        $this->twig->assign("hello", "hello world");
+        $this->twig->display("index.html");
     }
 }

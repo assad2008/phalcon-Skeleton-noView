@@ -11,6 +11,10 @@ return new \Phalcon\Config([
         "controllersDir" => ROOT_PATH . 'src/controllers/',
         "modelsDir" => ROOT_PATH . 'src/models/',
     ],
+    "view" => [
+        "viewdir" => ROOT_PATH . "src/views/",
+        "viewcache" => ROOT_PATH . "data/view/",
+    ],
     "mdb" => [
         "host" => "127.0.0.1",
         "username" => "root",

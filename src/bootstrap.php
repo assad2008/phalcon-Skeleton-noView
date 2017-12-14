@@ -7,7 +7,7 @@
  * @Synopsis: 核心启动文件
  * @Version: 1.0
  * @Last Modified by:   assad
- * @Last Modified time: 2017-12-14 18:07:24
+ * @Last Modified time: 2017-12-14 18:52:01
  * @Email: rlk002@gmail.com
  */
 
@@ -29,6 +29,7 @@ use Phalcon\Mvc\Router;
 use Phalcon\Mvc\Url;
 use Phalcon\Mvc\View;
 use Phalcon\Session\Adapter\Redis;
+use Yeedev\ViewBase;
 
 class Application extends BaseApplication
 {
@@ -84,9 +85,18 @@ class Application extends BaseApplication
             return new Request();
         });
 
-        $di->set('view', function () {
-            $view = new View();
-            return $view;
+        $di->set("view", function () {
+            return new View();
+        });
+
+        $di->set('twig', function () use ($config) {
+            $options = [
+                "cache" => $config->view->viewcache,
+                "debug" => true,
+                "charset" => "UTF-8",
+            ];
+            $twig = new ViewBase($config->view->viewdir, $options);
+            return $twig;
         });
 
         $di->set("url", function () {
