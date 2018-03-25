@@ -1,100 +1,85 @@
 [
     {
-        "name": "zf1/zend-exception",
-        "version": "1.12.20",
-        "version_normalized": "1.12.20.0",
+        "name": "leeoniya/dump-r",
+        "version": "2.1",
+        "version_normalized": "2.1.0.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/zf1/zend-exception.git",
-            "reference": "ca30959d3e2f522f481a3d1459386acf1aa4ca74"
+            "url": "https://github.com/leeoniya/dump_r.php.git",
+            "reference": "f6d3694f4ddd7dc08d7b3900875116eaf600034d"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/zf1/zend-exception/zipball/ca30959d3e2f522f481a3d1459386acf1aa4ca74",
-            "reference": "ca30959d3e2f522f481a3d1459386acf1aa4ca74",
-            "shasum": ""
+            "url": "https://api.github.com/repos/leeoniya/dump_r.php/zipball/f6d3694f4ddd7dc08d7b3900875116eaf600034d",
+            "reference": "f6d3694f4ddd7dc08d7b3900875116eaf600034d",
+            "shasum": "",
+            "mirrors": [
+                {
+                    "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                    "preferred": true
+                }
+            ]
         },
         "require": {
-            "php": ">=5.2.11"
-        },
-        "time": "2015-04-30T11:10:20+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Zend_Exception": "library/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "description": "Zend Framework 1 Exception package",
-        "homepage": "http://framework.zend.com/",
-        "keywords": [
-            "ZF1",
-            "exception",
-            "framework",
-            "zend"
-        ]
-    },
-    {
-        "name": "zf1/zend-registry",
-        "version": "1.12.20",
-        "version_normalized": "1.12.20.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/zf1/zend-registry.git",
-            "reference": "1737419285b800728c27063318509fb2d00057ba"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/zf1/zend-registry/zipball/1737419285b800728c27063318509fb2d00057ba",
-            "reference": "1737419285b800728c27063318509fb2d00057ba",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.2.11",
-            "zf1/zend-exception": "self.version"
+            "php": ">=5.4.0"
         },
         "suggest": {
-            "zf1/zend-loader": "Used in special situations or with special adapters"
+            "jdorn/sql-formatter": "Pretty-print dumped SQL strings"
         },
-        "time": "2017-07-11T23:55:24+00:00",
+        "time": "2015-09-04T22:05:16+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
-            "psr-0": {
-                "Zend_Registry": "library/"
+            "files": [
+                "dump_r.php"
+            ],
+            "psr-4": {
+                "dump_r\\": "src/dump_r"
             }
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
-            "BSD-3-Clause"
+            "MIT"
         ],
-        "description": "Zend Framework 1 Registry package",
-        "homepage": "http://framework.zend.com/",
+        "authors": [
+            {
+                "name": "Leon Sorokin",
+                "email": "leeoniya@gmail.com",
+                "homepage": "https://github.com/leeoniya",
+                "role": "Developer"
+            }
+        ],
+        "description": "a cleaner, leaner mix of print_r() and var_dump()",
+        "homepage": "https://github.com/leeoniya/dump_r.php",
         "keywords": [
-            "ZF1",
-            "framework",
-            "registry",
-            "zend"
+            "debug",
+            "dump",
+            "pretty",
+            "print",
+            "print_r",
+            "var_dump"
         ]
     },
     {
         "name": "symfony/polyfill-mbstring",
-        "version": "v1.6.0",
-        "version_normalized": "1.6.0.0",
+        "version": "v1.7.0",
+        "version_normalized": "1.7.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-mbstring.git",
-            "reference": "2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296"
+            "reference": "78be803ce01e55d3491c1397cf1c64beb9c1b63b"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296",
-            "reference": "2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296",
-            "shasum": ""
+            "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/78be803ce01e55d3491c1397cf1c64beb9c1b63b",
+            "reference": "78be803ce01e55d3491c1397cf1c64beb9c1b63b",
+            "shasum": "",
+            "mirrors": [
+                {
+                    "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                    "preferred": true
+                }
+            ]
         },
         "require": {
             "php": ">=5.3.3"
@@ -102,11 +87,11 @@
         "suggest": {
             "ext-mbstring": "For best performance"
         },
-        "time": "2017-10-11T12:05:26+00:00",
+        "time": "2018-01-30T19:27:44+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.6-dev"
+                "dev-master": "1.7-dev"
             }
         },
         "installation-source": "dist",
@@ -144,18 +129,24 @@
     },
     {
         "name": "twig/twig",
-        "version": "v2.4.4",
-        "version_normalized": "2.4.4.0",
+        "version": "v2.4.7",
+        "version_normalized": "2.4.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/twigphp/Twig.git",
-            "reference": "eddb97148ad779f27e670e1e3f19fb323aedafeb"
+            "reference": "69aacd44dbbaa3199d5afb68605c996d577896fc"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/twigphp/Twig/zipball/eddb97148ad779f27e670e1e3f19fb323aedafeb",
-            "reference": "eddb97148ad779f27e670e1e3f19fb323aedafeb",
-            "shasum": ""
+            "url": "https://api.github.com/repos/twigphp/Twig/zipball/69aacd44dbbaa3199d5afb68605c996d577896fc",
+            "reference": "69aacd44dbbaa3199d5afb68605c996d577896fc",
+            "shasum": "",
+            "mirrors": [
+                {
+                    "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                    "preferred": true
+                }
+            ]
         },
         "require": {
             "php": "^7.0",
@@ -163,10 +154,10 @@
         },
         "require-dev": {
             "psr/container": "^1.0",
-            "symfony/debug": "~2.7",
-            "symfony/phpunit-bridge": "~3.3@dev"
+            "symfony/debug": "^2.7",
+            "symfony/phpunit-bridge": "^3.3"
         },
-        "time": "2017-09-27T18:10:31+00:00",
+        "time": "2018-03-20T04:31:17+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -211,58 +202,97 @@
         ]
     },
     {
-        "name": "leeoniya/dump-r",
-        "version": "2.1",
-        "version_normalized": "2.1.0.0",
+        "name": "zf1/zend-exception",
+        "version": "1.12.20",
+        "version_normalized": "1.12.20.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/leeoniya/dump_r.php.git",
-            "reference": "f6d3694f4ddd7dc08d7b3900875116eaf600034d"
+            "url": "https://github.com/zf1/zend-exception.git",
+            "reference": "ca30959d3e2f522f481a3d1459386acf1aa4ca74"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/leeoniya/dump_r.php/zipball/f6d3694f4ddd7dc08d7b3900875116eaf600034d",
-            "reference": "f6d3694f4ddd7dc08d7b3900875116eaf600034d",
-            "shasum": ""
+            "url": "https://api.github.com/repos/zf1/zend-exception/zipball/ca30959d3e2f522f481a3d1459386acf1aa4ca74",
+            "reference": "ca30959d3e2f522f481a3d1459386acf1aa4ca74",
+            "shasum": "",
+            "mirrors": [
+                {
+                    "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                    "preferred": true
+                }
+            ]
         },
         "require": {
-            "php": ">=5.4.0"
+            "php": ">=5.2.11"
         },
-        "suggest": {
-            "jdorn/sql-formatter": "Pretty-print dumped SQL strings"
-        },
-        "time": "2015-09-04T22:05:16+00:00",
+        "time": "2015-04-30T11:10:20+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
-            "files": [
-                "dump_r.php"
-            ],
-            "psr-4": {
-                "dump_r\\": "src/dump_r"
+            "psr-0": {
+                "Zend_Exception": "library/"
             }
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
-            "MIT"
+            "BSD-3-Clause"
         ],
-        "authors": [
-            {
-                "name": "Leon Sorokin",
-                "email": "leeoniya@gmail.com",
-                "homepage": "https://github.com/leeoniya",
-                "role": "Developer"
-            }
-        ],
-        "description": "a cleaner, leaner mix of print_r() and var_dump()",
-        "homepage": "https://github.com/leeoniya/dump_r.php",
+        "description": "Zend Framework 1 Exception package",
+        "homepage": "http://framework.zend.com/",
         "keywords": [
-            "debug",
-            "dump",
-            "pretty",
-            "print",
-            "print_r",
-            "var_dump"
+            "ZF1",
+            "exception",
+            "framework",
+            "zend"
+        ]
+    },
+    {
+        "name": "zf1/zend-registry",
+        "version": "1.12.20",
+        "version_normalized": "1.12.20.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zf1/zend-registry.git",
+            "reference": "1737419285b800728c27063318509fb2d00057ba"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zf1/zend-registry/zipball/1737419285b800728c27063318509fb2d00057ba",
+            "reference": "1737419285b800728c27063318509fb2d00057ba",
+            "shasum": "",
+            "mirrors": [
+                {
+                    "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                    "preferred": true
+                }
+            ]
+        },
+        "require": {
+            "php": ">=5.2.11",
+            "zf1/zend-exception": "self.version"
+        },
+        "suggest": {
+            "zf1/zend-loader": "Used in special situations or with special adapters"
+        },
+        "time": "2017-07-11T23:55:24+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Zend_Registry": "library/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "Zend Framework 1 Registry package",
+        "homepage": "http://framework.zend.com/",
+        "keywords": [
+            "ZF1",
+            "framework",
+            "registry",
+            "zend"
         ]
     }
 ]
